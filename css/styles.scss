@@ -1,0 +1,275 @@
+//=========================================
+//      USAGE
+//========================================= 
+    .anthony { }
+    .barbara { }
+    .betty { }
+    .brian { }
+    .carol { }
+    .charles { }
+    .christopher { }
+    .daniel { }
+    .david { }
+    .deborah { }
+    .donald { }
+    .donna { }
+    .dorothy { }
+    .edward { }
+    .elizabeth { }
+    .george { }
+    .helen { }
+    .james { }
+    .jason  { }
+    .jeff { }
+    .jennifer { }
+    .john { }
+    .joseph { }
+    .karen    { }
+    .kenneth { }
+    .kevin { }
+    .kimberly { }
+    .laura { }
+    .linda { }
+    .lisa { }
+    .maria { }
+    .mark { }
+    .mary { }
+    .michael { }
+    .michelle { }
+    .nancy { }
+    .patricia { }
+    .paul { }
+    .richard { }
+    .robert { }
+    .ronald { }
+    .ruth { }
+    .sandra { }
+    .sarah { }
+    .sharon { }
+    .steven { }
+    .susan { }
+    .thomas { }    
+    .william { }
+
+//=========================================
+//      VARIABLES
+//=========================================
+
+//=========================================
+//      IMPORTS
+//=========================================
+    
+    @import url('https://fonts.googleapis.com/css?family=Josefin+Sans');
+
+//=========================================
+//      MIXINS
+//=========================================
+
+
+
+
+//=========================================
+//      GLOBAL STYLES
+//=========================================
+
+    *, *:before, *:after { box-sizing: border-box; }
+
+    body {
+        display: flex;
+        justify-content: flex-end;
+
+        font-family: 'Josefin Sans', sans-serif;
+
+        // background: url(../img/metal3.jpg);
+        background: #333;
+        // background-size: cover;
+
+    }
+
+    .anthony {
+        color: green;
+        font-size: 1em;
+        // background-color: yellow;
+
+        width: 100%;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        // align-items: left;
+        flex-wrap: wrap;
+    }
+
+    .deborah {
+        display: flex;
+        flex-wrap: wrap;
+        margin-bottom: 1em;
+        flex-direction: column;
+    }
+
+    .donna {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .barbara {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        // margin-bottom: 1em;
+        max-width: 20em;
+        margin: .5em;
+        background-color: #f2f2f2;
+        // border-radius: 6px;
+        justify-content: space-between;
+        height: 6em;
+
+        & > div {
+            flex: 1; // fill height vertically
+        }
+
+        &.christopher {
+            position: relative;
+            &::before {
+                content:"";
+                position: absolute;
+                top: 0;
+                left: 0;
+                border-radius: 50%;
+                width: 1em;
+                height: 1em;
+                background-color: red;
+            }
+        }
+    }
+
+    .charles {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        // padding: 2.5em;
+        padding: 1.5em;
+
+        &.cnx {
+            background: url(../img/inhouse_connexions.png) no-repeat;
+            background-position: center center;
+            background-size: contain;
+        }
+
+        &.sol {
+            background: url(../img/inhouse_solutions.png) no-repeat;
+            background-position: center center;
+            background-size: contain;
+        }
+        &.ihusa {
+            background: url(../img/inhouseusa.png) no-repeat;
+            background-position: center center;
+            background-size: contain;
+        }
+        &.tng {
+            background: url(../img/tng_logo.png) no-repeat;
+            background-position: center center;
+            background-size: contain;
+            background-color: #ccc;
+        }
+    }
+
+    .carol {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        // border: 1px solid red;
+    }
+
+    .betty {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        justify-content: center;
+        // height: 2em;
+        // align-items: center;
+        align-items: stretch;
+
+        &.local {
+            background: linear-gradient(0deg, green, lightgreen 40%, green);
+        }
+
+        &.staging {
+            background: linear-gradient(0deg, orange, lightyellow 40%, orange);
+        }
+
+        &.prod {
+            background: linear-gradient(0deg, red, pink 40%, red);
+        }
+
+        // background: linear-gradient(to left top, #ccc, #f2f2f2);
+        // background: linear-gradient(0deg, #ccc, #fff 40%, #f2f2f2);
+
+        &.jira {
+            background: linear-gradient(0deg, cadetblue, lightblue 40%, cadetblue);
+        }
+
+        &.git {
+            background: linear-gradient(0deg, #D16027, #F5B88C 40%, #D16027);
+        }
+        &.name {
+            font-size: 10px;
+            align-items: center;
+            text-align: center;
+            color: #000;
+        }
+
+        &.gregory {
+            a {
+                font-size: .7rem;
+            }
+        }
+
+        a {
+            width: 100%;
+            text-align: center;
+            text-decoration: none;
+            color: #4d4d4d;
+            display: flex;
+            // border: 1px solid white;
+            justify-content: center;
+            align-items: center;
+            // text-shadow:  1px 1px 1px #fff;
+        }
+
+        .brian {
+            // border: 1px solid red;
+        }
+
+    }
+
+    .david {
+        background: rgba(255,255,255,0.7);
+    }
+
+    .donald {
+        a {
+            color: #fff;
+            text-decoration: none;
+        }
+    }
+
+//=========================================
+//      SECTION A
+//=========================================
+
+//=========================================
+//      SECTION B
+//=========================================
+    
+
+//=========================================
+//      MEDIA QUERIES
+//=========================================
+
+
+    @media screen and (max-width: 400px) {
+
+        
+    }

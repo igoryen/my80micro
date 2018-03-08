@@ -1,0 +1,230 @@
+@import url("https://fonts.googleapis.com/css?family=Josefin+Sans");
+*, *:before, *:after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  font-family: 'Josefin Sans', sans-serif;
+  background: #333;
+}
+
+.anthony {
+  color: green;
+  font-size: 1em;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.deborah {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-bottom: 1em;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.donna {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.barbara {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+  max-width: 20em;
+  margin: .5em;
+  background-color: #f2f2f2;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  height: 6em;
+}
+
+.barbara > div {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+.barbara.christopher {
+  position: relative;
+}
+
+.barbara.christopher::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 50%;
+  width: 1em;
+  height: 1em;
+  background-color: red;
+}
+
+.charles {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 1.5em;
+}
+
+.charles.cnx {
+  background: url(../img/inhouse_connexions.png) no-repeat;
+  background-position: center center;
+  background-size: contain;
+}
+
+.charles.sol {
+  background: url(../img/inhouse_solutions.png) no-repeat;
+  background-position: center center;
+  background-size: contain;
+}
+
+.charles.ihusa {
+  background: url(../img/inhouseusa.png) no-repeat;
+  background-position: center center;
+  background-size: contain;
+}
+
+.charles.tng {
+  background: url(../img/tng_logo.png) no-repeat;
+  background-position: center center;
+  background-size: contain;
+  background-color: #ccc;
+}
+
+.carol {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  width: 100%;
+}
+
+.betty {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  width: 100%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+}
+
+.betty.local {
+  background: -webkit-gradient(linear, left bottom, left top, from(green), color-stop(40%, lightgreen), to(green));
+  background: linear-gradient(0deg, green, lightgreen 40%, green);
+}
+
+.betty.staging {
+  background: -webkit-gradient(linear, left bottom, left top, from(orange), color-stop(40%, lightyellow), to(orange));
+  background: linear-gradient(0deg, orange, lightyellow 40%, orange);
+}
+
+.betty.prod {
+  background: -webkit-gradient(linear, left bottom, left top, from(red), color-stop(40%, pink), to(red));
+  background: linear-gradient(0deg, red, pink 40%, red);
+}
+
+.betty.jira {
+  background: -webkit-gradient(linear, left bottom, left top, from(cadetblue), color-stop(40%, lightblue), to(cadetblue));
+  background: linear-gradient(0deg, cadetblue, lightblue 40%, cadetblue);
+}
+
+.betty.git {
+  background: -webkit-gradient(linear, left bottom, left top, from(#D16027), color-stop(40%, #F5B88C), to(#D16027));
+  background: linear-gradient(0deg, #D16027, #F5B88C 40%, #D16027);
+}
+
+.betty.name {
+  font-size: 10px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  color: #000;
+}
+
+.betty.gregory a {
+  font-size: .7rem;
+}
+
+.betty a {
+  width: 100%;
+  text-align: center;
+  text-decoration: none;
+  color: #4d4d4d;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.david {
+  background: rgba(255, 255, 255, 0.7);
+}
+
+.donald a {
+  color: #fff;
+  text-decoration: none;
+}
+
+/*# sourceMappingURL=styles.css.map */
